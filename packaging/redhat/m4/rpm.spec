@@ -80,7 +80,7 @@ libmj provides JSON routines required by libnetpgp.
 
 %files -n libmj
 %defattr(-,root,root)
-`'PREFIX`'/lib/libmj.so
+%{_libdir}/libmj.so
 %attr(0644,root,root) %{_libdir}/libmj.so.*
 %attr(0644,root,root) %{_mandir}/man3/libmj.3.gz
 
@@ -101,7 +101,7 @@ libnetpgp provides cryptographic routines and support for PGP.
 
 %files -n libnetpgp
 %defattr(-,root,root)
-`'PREFIX`'/lib/libnetpgp.so
+%{_libdir}/libnetpgp.so
 %attr(0644,root,root) %{_libdir}/libnetpgp.so.*
 %attr(0644,root,root) %{_mandir}/man3/libnetpgp.3.gz
 
