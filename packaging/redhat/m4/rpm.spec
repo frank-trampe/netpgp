@@ -15,7 +15,7 @@ URL: http://www.netpgp.com/
 Packager: Package Maintainer <releases@netbsd.org>
 Summary: Freely licensed PGP implementation
 Source: SOURCE_TARBALL_NAME
-BuildRequires: openssl-devel, zlib-devel, bzip2-devel, pmake
+BuildRequires: openssl-devel, zlib-devel, bzip2-devel
 Requires: netpgpverify = %{version}
 
 %define _unpackaged_files_terminate_build 0
