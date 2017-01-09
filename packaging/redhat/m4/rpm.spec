@@ -38,7 +38,7 @@ find "%{buildroot}"/%{_libdir} -name "*.la" -delete;
 # chrpath -d "%{buildroot}"/%{_prefix}/bin/netpgp;
 # chrpath -d "%{buildroot}"/%{_prefix}/bin/netpgpkeys;
 # chrpath -d "%{buildroot}"/%{_prefix}/bin/netpgpverify;
-chmod 0644 "%{buildroot}"/%{_libdir}/lib*.so.*;
+chmod 0755 "%{buildroot}"/%{_libdir}/lib*.so.*;
 for file in %{_mandir}/man1/netpgp.1 \
 %{_mandir}/man1/netpgpkeys.1 \
 %{_mandir}/man3/libmj.3 \
