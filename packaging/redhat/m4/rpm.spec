@@ -1,4 +1,5 @@
-dnl This file is hereby released under the license of the enclosing project.
+dnl Frank Trampe wrote this.
+dnl The file is hereby released under the license of the enclosing project.
 dnl This gets processed by m4.
 dnl Macros:
 dnl   PACKAGE_VERSION
@@ -12,7 +13,7 @@ Release: 1
 License: BSD
 Vendor: NetBSD
 URL: http://www.netpgp.com/
-Packager: Package Maintainer <releases@netbsd.org>
+Packager: Alistair Crooks <agc@netbsd.org>
 Summary: Freely licensed PGP implementation
 Source: SOURCE_TARBALL_NAME
 BuildRequires: openssl-devel, zlib-devel, bzip2-devel
