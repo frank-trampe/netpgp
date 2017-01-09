@@ -28,8 +28,8 @@ ifdef(`PREFIX',%define _prefix PREFIX)
 NetPGP is a PGP-compatible tool for encrypting, signing, decrypting, and verifying files.
 
 %build
-./configure --prefix=%{_prefix} --libdir=%{_libdir} && env MAKE=pmake pmake clean && env MAKE=pmake pmake;
-(cd src/netpgpverify && ./configure --prefix=%{_prefix} --mandir=%{_mandir} && env MAKE=pmake pmake clean && env MAKE=pmake pmake;)
+./configure --prefix=%{_prefix} --libdir=%{_libdir} && make clean && make;
+(cd src/netpgpverify && ./configure --prefix=%{_prefix} --mandir=%{_mandir} && make clean && make;)
 
 %install
 make install DESTDIR="%{buildroot}";
